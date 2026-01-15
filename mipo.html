@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cutest moment with my gf</title>
+  <link rel="stylesheet" href="mipo.css">
+  <script src="mipo.js" defer></script>
+</head>
+<body>
+
+  <header>Every Memory with You is My Favorite</header>
+
+  <section class="gallery">
+    <img src="jennie 4 (2).jpeg" 
+         class="walk" 
+         data-sound="jennie singing.mp3" 
+         data-quote="Singing Best Part with you felt like living inside the song itself.
+         Dari setiap lirik yang kita ucapin bareng,aku sadar you really are the best part of my life💕"
+         alt="Jennie Singing">
+
+    <img src="jennie 2.jpeg" 
+         class="smile" 
+         data-sound="jennie laughing.mp3" 
+         data-quote="In this world full of sounds, the one I love the most is your laughter just like this sound. It’s soft yet powerful, simple yet it lights up everything around me.
+         Dari semua hal yang bisa bikin aku bahagia, nggak ada yang seindah suara tawamu. Each laugh feels like music, a melody I never want to end.
+         In every universe, in every lifetime, I’d still choose your laughter as my favorite song."
+         alt="Jennie Smile">
+
+    <img src="jennie 5.jpeg" 
+         class="pout" 
+         data-sound="music jennie.mp3" 
+         data-quote="I still remember the first time you sent me this picture, and for a moment, my heart just stopped.Seakan dunia ikut terdiam,
+         hanya menyisakan senyum kamu di layar itu. Then suddenly, Just You by Teddy Adhitya started to play, and every lyric felt like it was written for us.
+         Aku ngerasa begitu beruntung, melihat sosok yang selalu ada di pikiranku. That picture wasn’t just an image,it was the beginning of a memory I’ll never forget"
+         alt="first pict">
+
+    <img src="jennie 1.jpeg" 
+         class="beach" 
+         data-sound="ocean talk.mp3" 
+         data-quote="I still remember the first time we had a deep talk by the sea,dengan suara ombak yang jadi musik latar kita.
+         The world felt quiet, yet my heart was so full.Every word you said stayed with me, seakan-akan laut sendiri jadi saksi cerita kita. For the first time, I felt truly seen, truly heard.
+         Sore itu sederhana,tapi terasa seperti salah satu kenangan terindah. With you, even the ocean whispered love"
+         alt="Jennie Beach">
+
+    <img src="b jennie.jpeg" 
+         class="bday" 
+         data-sound="jennie b day.mp3" 
+         data-quote="still remember the first time I celebrated your birthday, this time surrounded by all your friends. The room was full of laughter and warmth, but my eyes kept finding their way back to you.
+         Melihat kamu tertawa dan dikelilingi orang yang sayang sama kamu, made me realize how special you truly are. You blew out the candles with that beautiful smile,
+         and in that moment, I silently made my own wish that I could be by your side for every birthday to come."
+         alt="Jennie wimme">
+
+    <img src="jennie 6.jpeg" 
+         class="pouting" 
+         data-sound="jennie pouting.mp3" 
+         data-quote="here’s something I can never resist, every time you take a picture with that little pose. It’s not just a face, it’s a whole feeling. Karena setiap kali kamu ngelakuin itu,
+         kamu selalu ngeluarin suara aneh kaya di sound ini dan itu selalu terus ada di kepalaku, seakan-akan foto itu hidup. It always makes me smile, and somehow fall for you all over again"
+         alt="Jennie Eating">
+
+    <img src="jennie 3.jpeg" 
+         class="hi" 
+         data-sound="jennie hai.mp3" 
+         data-quote="That day while we were walking together, just casually recording our little vlog, everything already felt so warm and fun. Then suddenly, you looked at the camera,
+         with that sweet smile and said, “It’s me here”. My heart skipped a beat, like the world paused for a second. Sederhana, tapi begitu berkesan,
+         karena dari jutaan momen kecil, that one line made me fall for you even deeper."
+         alt="Jennie Sayhi">
+
+    <img src="jennie 7.jpeg" 
+         class="sneez" 
+         data-sound="jennie sound.mp3" 
+         data-quote="There’s something so simple, yet so adorable every time you sneeze. It makes me smile without even trying, like a little secret only I get to treasure.
+         Dari semua kebiasaan kecilmu, this one always melts my heart. Even the way you say 'achoo' feels special,a reminder of how cute you are to me."
+         alt="Jennie Sneezing">
+
+    <img src="jennie 8.jpeg" 
+         class="horsiee" 
+         data-sound="jennie with horse.mp3" 
+         data-quote="That day when we went out to ride horses, I couldn’t stop smiling watching you. Every time you saw a horse, you talked to it with the cutest little voice ahaha just like this sound.
+         Kamu cerita kalau dari kecil udah suka kuda, and in that moment, I loved seeing the childlike joy in your eyes. Before we went home, you took a picture with the horse,
+         showing that gummy smile I adore so much. It was simple, yet one of the sweetest memories, a piece of you I’ll always keep close to my heart."
+         alt="Jennie Horse">
+  </section>
+
+     <audio id="photoAudio"></audio>
+
+  <!-- Modal untuk foto -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="modalCaption"></div>
+</div>
+
+  <!-- Modal untuk tampilan besar -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="">
+    <p id="modalQuote"></p>
+  </div>
+
+  <!-- Quotes Section -->
+  <section class="quotes">
+    <p id="quoteText"></p>
+  </section>
+
+  <!-- Floating Music Button -->
+  <button id="musicBtn">🎶</button>
+  <audio id="bg-music" loop>
+    <source src="Blessed - Daniel Caesar.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Footer -->
+     <footer>
+      Made with LOVE
+      <br>
+     </footer>
+
+
+  <!-- Modal -->
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption"></div>
+    </div>
+
+      <!-- Button buat pesan -->
+     <button id="messageBtn" class="message-btn">💌 Message for Jennie</button>
+
+      <!-- Modal untuk pesan -->
+     <div id="messageModal">
+          <div class="message-content">
+          <span class="close-message">&times;</span>  <!-- tombol X -->
+          <h2>For Jennie 💖</h2>
+          <p>Since you came into my life, everything I thought I knew about happiness changed. The world felt softer, brighter, and full of meaning—
+             all because of you. Kamu adalah kejutan terindah yang pernah aku terima, a blessing I never even knew I was waiting for. I feel so lucky, not just to meet you,
+             but to call you mine, and to love you for as long as I live.</p>
+     </div>
+</div>
+
+
+</body>
+</html>
